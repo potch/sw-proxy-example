@@ -232,7 +232,7 @@ function loadRepoData(name) {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+  navigator.serviceWorker.register('/service-worker.js')
   .then(function () {
     repos.forEach(r => dispatch('LOAD_REPO', {repo: r}));
   }).catch(err('[sw]'));
