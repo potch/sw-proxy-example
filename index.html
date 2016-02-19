@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      thead tr {
+        background: #eee;
+        font-size: .9em;
+      }
+      tbody tr {
+        border-bottom: 1px solid #ddd;
+      }
+      thead th:first-child,
+      tbody td:first-child {
+        text-align: left;
+      }
+      td, th {
+        text-align: center;
+        padding: 1em .5em;
+      }
+      article {
+        margin: 1em auto;
+        max-width: 800px;
+      }
+      .big-numbers {
+        display: flex;
+        flex-direction: row;
+        margin: 3em 0;
+      }
+      .item {
+        flex: 1;
+        text-align: center;
+      }
+      .big-number {
+        font-size: 4em;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      .add-repo td {
+        padding: .5em .25em;
+      }
+      input {
+        font: inherit;
+        padding: .25em .5em;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+      </header>
+      <section class="big-numbers">
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Repository</th>
+            <th>Issues</th>
+            <th>Unassigned</th>
+            <th>PRs</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </article>
+    <script src="https://fb.me/react-0.14.7.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

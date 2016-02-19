@@ -1,0 +1,29 @@
+{
+  "name": "sw-proxy-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "babel src --out-file app.js",
+    "watch": "onchange src/* -- npm run build",
+    "serve": "simple-server 8080",
+    "start": "npm-run-all --parallel watch serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potch/sw-proxy-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potch/sw-proxy-example/issues"
+  },
+  "homepage": "https://github.com/potch/sw-proxy-example#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "npm-run-all": "^1.5.1",
+    "simple-server": "^1.0.1"
+  }
+}
