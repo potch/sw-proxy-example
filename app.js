@@ -335,7 +335,7 @@ function loadRepoData(name) {
 }
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function () {
+  navigator.serviceWorker.register('./service-worker.js').then(function () {
     repos.forEach(function (r) {
       return dispatch('LOAD_REPO', { repo: r });
     });
